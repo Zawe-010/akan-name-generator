@@ -104,6 +104,10 @@ form div {
 
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
     .container {
         padding: 20px;
     }
@@ -125,7 +129,7 @@ form div {
         font-size: 1.2rem;
     }
 
-    input[type="text"], input[type="number"], select {
+    input[type="text"],input[type="number"],select {
         padding: 12px;
         font-size: 1rem;
     }
