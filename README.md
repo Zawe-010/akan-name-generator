@@ -72,12 +72,15 @@ You can modify the styling in the `style.css` file or update the logic in `scrip
 This is how the project is organized:
 
 ```
+
 akan-name-generator/
 │
+├── README.md         # This file, which explains the project and setup instructions.
 ├── index.html         # Main HTML file containing the structure of the app.
-├── style.css          # CSS file for styling the page.
 ├── script.js          # JavaScript file that handles user input and calculates the Akan name.
-└── README.md          # This file, which explains the project and setup instructions.
+└── style.css          # CSS file for styling the page.
+
+
 ```
 
 ## License
