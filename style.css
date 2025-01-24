@@ -29,12 +29,14 @@ h1, h2 {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
     margin-bottom: 40px;
-    clear: both; /* Clear previous floats */
+    clear: both; 
 }
 
 /* Form Styles */
 form {
+    display: block;
     width: 100%;
+    max-width: 550px;
     margin: 0 auto;
     padding: 25px;
     background-color: #ffffff;
@@ -67,7 +69,6 @@ input[type="text"]:focus, input[type="number"]:focus, select:focus {
 
 button {
     padding: 15px 30px;
-    /* Increase horizontal padding to make the button longer */
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -78,11 +79,8 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
     width: 50%;
-    /* Set a fixed width for the button, or adjust as needed */
     max-width: 300px;
-    /* Maximum width, so it doesn't get too wide on larger screens */
     margin: 0 auto;
-    /* Center the button horizontally */
 }
 
 button:hover {
