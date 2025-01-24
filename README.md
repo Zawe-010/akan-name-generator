@@ -9,7 +9,6 @@ Akan Name Calculator is a simple web application that helps you discover your Ak
 - [How to Use](#how-to-use)
 - [Setup Instructions](#setup-instructions)
 - [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Project Overview
