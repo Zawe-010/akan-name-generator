@@ -1,0 +1,177 @@
+/* Basic Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Clean and modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f9ff, #e3f2fd, #f7b7b7);
+    /* Soft gradient background with a hint of pink */
+    color: #2c3e50;
+    /* Dark text color for readability */
+    background-attachment: fixed;
+    /* Keeps the gradient fixed while scrolling */
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #ffffff;
+    /* White text for header */
+    background-color: #2980b9;
+    /* Strong blue color for header background */
+    padding: 20px 0;
+    border-radius: 10px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* A bit more emphasis on headers */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #dff9ff);
+    /* Light gradient for content area */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow effect */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* Increased gap for better spacing between form elements */
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    /* White background for the form */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for form */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 15px;
+    font-size: 1rem;
+    width: 100%;
+    border: 2px solid #2980b9;
+    /* Blue border for inputs */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    /* Light grey background for inputs */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for input interactions */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #3498db;
+    /* Lighter blue on focus */
+    outline: none;
+    background-color: #ffffff;
+    /* White background when focused */
+}
+
+button {
+    padding: 15px;
+    background-color: #4CAF50;
+    /* Fresh green button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth transition on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for button */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Slightly darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* More prominent shadow on hover */
+}
+
+.alert {
+    color: #e74c3c;
+    /* Red color for alert messages */
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        padding: 18px;
+        font-size: 1.2rem;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 85%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 18px;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        padding: 40px;
+    }
+
+    form {
+        max-width: 550px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        padding: 18px;
+        font-size: 1.3rem;
+    }
+}

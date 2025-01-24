@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Akan Name Calculator</h1>
+            <p>This web application helps you discover your Akan name based on the day of the week you were born and
+                your gender.</p>
+        </header>
+
+        <main>
+            <form id="birthdayForm">
+                <label for="day">Day of Birth:</label>
+                <input type="number" id="day" name="day" required placeholder="Enter day (1-31)" min="1" max="31">
+
+                <label for="month">Month of Birth:</label>
+                <input type="number" id="month" name="month" required placeholder="Enter month (1-12)" min="1" max="12">
+
+                <label for="year">Year of Birth:</label>
+                <input type="number" id="year" name="year" required placeholder="Enter year" min="1900" max="2099">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="result"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
