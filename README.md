@@ -76,11 +76,9 @@ This is how the project is organized:
 akan-name-generator/
 │
 ├── README.md         # This file, which explains the project and setup instructions.
-├── index.html         # Main HTML file containing the structure of the app.
-├── script.js          # JavaScript file that handles user input and calculates the Akan name.
-└── style.css          # CSS file for styling the page.
-
-
+├── index.html        # Main HTML file containing the structure of the app.
+├── script.js         # JavaScript file that handles user input and calculates the Akan name.
+└── style.css         # CSS file for styling the page.
 ```
 
 ## License
