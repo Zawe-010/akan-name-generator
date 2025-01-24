@@ -6,10 +6,9 @@ body {
     background: linear-gradient(135deg, #f0f9ff, #e3f2fd, #f7b7b7);
     color: #2c3e50;
     background-attachment: fixed;
-
 }
 
-h1,h2 {
+h1, h2 {
     text-align: center;
     color: #ffffff;
     background-color: #2980b9;
@@ -20,8 +19,9 @@ h1,h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Container Styles */
 .container {
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
     padding: 30px;
     background: linear-gradient(135deg, #ffffff, #dff9ff);
@@ -29,13 +29,12 @@ h1,h2 {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
     margin-bottom: 40px;
+    clear: both; /* Clear previous floats */
 }
 
+/* Form Styles */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    max-width: 550px;
+    width: 100%;
     margin: 0 auto;
     padding: 25px;
     background-color: #ffffff;
@@ -43,7 +42,13 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"],input[type="number"],select {
+form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], select {
     padding: 15px;
     font-size: 1rem;
     width: 100%;
@@ -51,16 +56,18 @@ input[type="text"],input[type="number"],select {
     border-radius: 8px;
     background-color: #f9f9f9;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
 }
 
-input[type="text"]:focus,input[type="number"]:focus,select:focus {
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
     border-color: #3498db;
     outline: none;
     background-color: #ffffff;
 }
 
 button {
-    padding: 15px;
+    padding: 15px 30px;
+    /* Increase horizontal padding to make the button longer */
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -69,6 +76,13 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 50%;
+    /* Set a fixed width for the button, or adjust as needed */
+    max-width: 300px;
+    /* Maximum width, so it doesn't get too wide on larger screens */
+    margin: 0 auto;
+    /* Center the button horizontally */
 }
 
 button:hover {
@@ -76,6 +90,13 @@ button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Centering the Submit Button */
+form div {
+    text-align: center; /* This centers the button inside the div */
+    clear: both; /* Ensure the form elements above don't float around */
+}
+
+/* Alert Styles */
 .alert {
     color: #e74c3c;
     text-align: center;
@@ -106,7 +127,7 @@ button:hover {
         font-size: 1.2rem;
     }
 
-    input[type="text"],input[type="number"],select {
+    input[type="text"], input[type="number"], select {
         padding: 12px;
         font-size: 1rem;
     }
